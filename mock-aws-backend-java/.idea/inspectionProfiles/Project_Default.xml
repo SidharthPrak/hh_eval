@@ -1,0 +1,32 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MavenPackageUpdate" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="excludeList">
+        <list>
+          <option value="com.amazonaws:aws-java-sdk" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.google.guava:guava" />
+          <option value="com.h2database:h2" />
+          <option value="io.springfox:springfox-swagger-ui" />
+          <option value="com.sipios:spring-search" />
+          <option value="org.apache.poi:poi" />
+          <option value="io.springfox:springfox-swagger2" />
+          <option value="org.mockito:mockito-core" />
+          <option value="org.apache.poi:poi-ooxml" />
+          <option value="org.projectlombok:lombok" />
+          <option value="org.modelmapper:modelmapper" />
+          <option value="org.springframework.plugin:spring-plugin-core" />
+          <option value="org.springframework.boot:spring-boot-starter-data-jpa" />
+          <option value="org.testcontainers:postgresql" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
