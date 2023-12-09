@@ -15,7 +15,7 @@ spec:
               app: pipeline-kafka-broker
       ports:
         - protocol: TCP
-          port: 9092  # Adjust this port based on your Kafka broker configuration
+          port: 9092  
 
   egress:
     - to:
@@ -24,4 +24,4 @@ spec:
               app: pipeline-kafka-broker
       ports:
         - protocol: TCP
-          port: 9092  # Adjust this port based on your Kafka broker configuration
+          port: 9092  
