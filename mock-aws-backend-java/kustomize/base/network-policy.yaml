@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: pipeline-processing-ingress-egress
+spec:
+  podSelector:
+    matchLabels:
+      app: pipeline-processing-app
+  policyTypes:
+    - Egress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              app: pipeline-kafka-broker
+      ports:
+        - protocol: TCP
+          port: 9092  # Adjust this port based on your Kafka broker configuration
+
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              app: pipeline-kafka-broker
+      ports:
+        - protocol: TCP
+          port: 9092  # Adjust this port based on your Kafka broker configuration

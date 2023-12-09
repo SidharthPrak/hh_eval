@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: pipeline-processing-app-rc
+spec:
+  replicas: 4
+  selector:
+    app: pipeline-processing-app
+  template:
+    metadata:
+      labels:
+        app: pipeline-processing-app
+    spec:
+      containers:
+        - name: pipeline-processing-app-container
+          image: sidprak1357/pipeline-processing-app:latest
+          ports:
+            - containerPort: 5000
+          env:
+            - name: MONGO_HOST
+              value: mongodb-service
+            - name: MONGO_PORT
+              value: "27017"
