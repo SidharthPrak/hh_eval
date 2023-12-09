@@ -32,14 +32,19 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-security</artifactId>-->
-<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
             <version>${jpa.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>bom</artifactId>
+            <version>2.21.42</version>
+            <type>pom</type>
+            <scope>import</scope>
         </dependency>
 
         <dependency>
@@ -50,6 +55,40 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <version>${h2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>2.7.2</version> <!-- Replace with the latest version -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.0.RELEASE</version> <!-- Replace with the latest version -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-messaging</artifactId>
+            <version>5.3.24</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.10.0</version> <!-- Replace with the latest version -->
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.10.0</version> <!-- Replace with the latest version -->
         </dependency>
 
         <dependency>
@@ -96,6 +135,41 @@
             <artifactId>javax.mail</artifactId>
             <version>1.6.2</version> <!-- Use the latest version available -->
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.retry</groupId>
+            <artifactId>spring-retry</artifactId>
+            <!-- Use the latest version -->
+            <version>1.3.1</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.mongodb</groupId>-->
+<!--            <artifactId>mongodb-driver-sync</artifactId>-->
+<!--            <version>4.8.2</version>-->
+<!--        </dependency>-->
+            <!-- Spring Boot Starter for MongoDB -->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.data</groupId>-->
+<!--                <artifactId>spring-data-mongodb</artifactId>-->
+<!--                <version>3.3.6</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.data</groupId>-->
+<!--                <artifactId>spring-data-commons</artifactId>-->
+<!--                <version>2.7.2</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.mongodb</groupId>-->
+<!--                <artifactId>mongodb-driver-core</artifactId>-->
+<!--                <version>4.4.2</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.mongodb</groupId>-->
+<!--                <artifactId>mongodb-driver-sync</artifactId>-->
+<!--                <version>4.4.2</version>-->
+<!--            </dependency>-->
+
     </dependencies>
     <build>
         <plugins>

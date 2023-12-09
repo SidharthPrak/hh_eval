@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+kafka-topics:
+  producers:
+    retry:
+      topic-name: retry-events
+    metric:
+      topic-name: metric-events
+  consumers:
+    pipeline:
+      topic-name: pipeline-events
+      group-id: pipeline-consumer-group-1
+
+pipeline:
+  thread-count: 10
+
+
+
+services:
+  python:
+    url: http://localhost:8090
+    fetch-extension: /python/execute
+
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: hh_db
+#      username:
+#      password:
+
